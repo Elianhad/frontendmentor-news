@@ -54,7 +54,7 @@ h2, h3 {
 img {
   max-width: 100%;
 }
-@media (min-width: 1440px) {
+@media (min-width: 990px) {
   .layout-desktop {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -137,7 +137,7 @@ style to hero
 .hero-title {
   margin-top: 1rem;
 }
-@media (min-width: 1440px) {
+@media (min-width: 990px) {
   .layout-desktop-hero {
     display: flex;
     gap: 2rem;
@@ -178,7 +178,7 @@ style to NEW
 /*
 style to card
 */
-@media (min-width: 1440px) {
+@media (min-width: 990px) {
   .card-section {
     display: flex;
     gap: 2rem;
