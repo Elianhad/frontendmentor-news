@@ -6,13 +6,15 @@ import Cards from './components/Cards'
 import imgHeroMobil from './assets/images/image-web-3-mobile.jpg'
 import imgHeroDesktop from './assets/images/image-web-3-desktop.jpg'
 
-function App() {
+function App () {
   const [widthDevice, setWidthDevice] = useState(window.innerWidth)
-  const onResize = (e) => {
-    setWidthDevice(window.innerWidth)
-  }
+
   useEffect(() => {
-    window.addEventListener('resize', () => onResize())
+    const onResize = (e) => {
+      setWidthDevice(window.innerWidth)
+    }
+    window.addEventListener('resize', onResize)
+    return () => window.addEventListener('resize', onResize)
   }, [])
 
   return (
